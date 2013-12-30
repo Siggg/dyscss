@@ -1,0 +1,77 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+/* This bit handles the general focus rules */
+*:focus {
+    outline: 2px solid -moz-rgba(255,0,0,0.5) !important;
+    outline-offset: 1px !important;
+    -moz-outline-radius: 5px !important;
+    outline-radius: 5px !important;
+    font-weight: bold !important;
+}
+/* This bit handles the more specific focus rules */
+textarea:focus, input[type="text"]:focus, select:focus, input[name="q"]:focus, input[type="password"]:focus {
+    -moz-appearance: none !important; 
+    background: #FFFFDE !important;
+    color: #404 !important;
+    outline: red outset 2px !important;
+    font-weight: bold !important;
+}
+/* This bit handles the general page reformatting rules */
+html, body, html * div, h1, h2, h3, h4, h5, h6, p, table, td, th, span, nav, form, fieldset, tt, i, b, big, small, section, pre, aside, hr, ul, li  {
+    -moz-appearance: none !important;
+    font-family: OpenDyslexic, "Comic Sans MS", verdana, arial, helvetica, sans-serif !important;
+    font-size: 14pt !important;
+    line-height: 3em !important;
+    word-spacing: 2em !important;
+    color: #404 !important;
+    background: #FFFFDE !important;
+    background-image: none !important;
+}
+h1, h4 {
+    color: red !important;
+}
+h2, h5 {
+    color: green !important;
+}
+h3, h6 {
+    color: blue !important;
+}
+/* This bit handles the general hyperlink reformatting rules */
+a, a:link, a:visited, a:hover, a:active {
+    -moz-appearance: none !important;
+    color: #00E !important;
+    background-image: none !important;
+    background: #FFFFDE !important;
+    font-size: 14pt !important;
+    line-height: 2.5 !important;
+    word-spacing: 3 !important;
+}
+a {
+    text-decoration:underline !important;
+}
+/* *::first-line, */
+html::first-line, body::first-line, html * div::first-line, h1::first-line, h2::first-line, h3::first-line, h4::first-line, h5::first-line, h6::first-line, p::first-line, table::first-line, td::first-line, th::first-line, span::first-line, nav::first-line, form::first-line, fieldset::first-line, tt::first-line, i::first-line, b::first-line, big::first-line, small::first-line, section::first-line, pre::first-line, aside::first-line, hr::first-line, ul::first-line, li::first-line {
+    color: red !important;
+}
+/* *:first-letter { */
+html:first-letter, body:first-letter, html * div:first-letter, h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter, h6:first-letter, p:first-letter, table:first-letter, td:first-letter, th:first-letter, span:first-letter, nav:first-letter, form:first-letter, fieldset:first-letter, tt:first-letter, i:first-letter, b:first-letter, big:first-letter, small:first-letter, section:first-letter, pre:first-letter, aside:first-letter, hr:first-letter, ul:first-letter, li:first-letter {
+    background-color: silver !important;
+}
+input {
+    -moz-appearance: none !important; 
+    background: #FFFFDE !important;
+    color: #404 !important;
+    font-family: "Comic Sans MS", verdana, arial, helvetica, sans-serif !important;
+    font-size: 12pt !important;
+    outline: red outset 2px !important;
+}
+html * input {
+    line-height: 1 !important;
+}
+input:first-letter {
+    background-color: silver !important;
+}
+/* This bit handles just the HTML5 <mark> tag for now... */ 
+mark { 
+    background-color: cyan !important;
+} 
